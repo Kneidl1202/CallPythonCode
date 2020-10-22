@@ -1,0 +1,12 @@
+/Users/andreas/Projects/C#/callPythonCode/obj/Debug/netcoreapp3.1/callPythonCode.csprojAssemblyReference.cache
+/Users/andreas/Projects/C#/callPythonCode/obj/Debug/netcoreapp3.1/callPythonCode.AssemblyInfoInputs.cache
+/Users/andreas/Projects/C#/callPythonCode/obj/Debug/netcoreapp3.1/callPythonCode.AssemblyInfo.cs
+/Users/andreas/Projects/C#/callPythonCode/obj/Debug/netcoreapp3.1/callPythonCode.csproj.CoreCompileInputs.cache
+/Users/andreas/Projects/C#/callPythonCode/bin/Debug/netcoreapp3.1/callPythonCode.deps.json
+/Users/andreas/Projects/C#/callPythonCode/bin/Debug/netcoreapp3.1/callPythonCode.runtimeconfig.json
+/Users/andreas/Projects/C#/callPythonCode/bin/Debug/netcoreapp3.1/callPythonCode.runtimeconfig.dev.json
+/Users/andreas/Projects/C#/callPythonCode/bin/Debug/netcoreapp3.1/callPythonCode.dll
+/Users/andreas/Projects/C#/callPythonCode/bin/Debug/netcoreapp3.1/callPythonCode.pdb
+/Users/andreas/Projects/C#/callPythonCode/obj/Debug/netcoreapp3.1/callPythonCode.dll
+/Users/andreas/Projects/C#/callPythonCode/obj/Debug/netcoreapp3.1/callPythonCode.pdb
+/Users/andreas/Projects/C#/callPythonCode/obj/Debug/netcoreapp3.1/callPythonCode.genruntimeconfig.cache
