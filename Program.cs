@@ -1,4 +1,6 @@
 ﻿using System;
+using System.IO;
+
 
 namespace callPythonCode
 {
@@ -11,23 +13,43 @@ namespace callPythonCode
 
         void CallPythonProgramm()
         {
-            string path = Environment.CurrentDirectory;
-            string command = path + "/" + "main.py";
-            System.Diagnostics.Process.Start("CMD.exe", command);
+            System.Diagnostics.Process.Start("CMD.exe", "python3 main.py");
         }
 
-        void CopyFilesToFlashDrive()
+        void CopyFilesToFlashDrive(string savePath)
         {
-            string amount = "amount.txt";
-            string originalPage1 = "seite1.txt";
-            string originalPage2_1 = "seite2checkboxes.txt";
-            string originalPage2_2 = "seite2textboxes.txt";
-            string originalPage_3 = "seite3.txt";
-            string originalPage_4 = "seite4.txt";
-            string originalPage_5 = "seite5.txt";
-            string originalPage_6 = "seite6.txt";
+            string[] files = new string[8] { "amount.txt", "seite1.txt", "seite2checkboxes.txt", "seite2textboxes.txt", "seite3.txt", "seite4.txt", "seite5.txt", "seite6.txt" };
 
+            try
+            {
+                foreach (string item in files)
+                {
+                    File.Move(item, savePath + "/" + item);
+                }
+            }
+            catch (Exception ex) { Console.WriteLine(ex); }
+        }
 
+        void ReadFilesFromFlashDrive(string readPath)
+        {
+            Console.WriteLine("Sind Sie sicher, dass Sie die bereits existierenden Daten Überschreiben wollen? Wenn ja geben Sie ja ein und drücken Enter. Sonst drücken Sie eine beliebige Taste.");
+            if (Console.ReadLine() == "ja")
+            {
+                string[] files = new string[8] { "amount.txt", "seite1.txt", "seite2checkboxes.txt", "seite2textboxes.txt", "seite3.txt", "seite4.txt", "seite5.txt", "seite6.txt" };
+
+                try
+                {
+                    foreach (string item in files)
+                    {
+                        File.Move(readPath + "/" + item, item);
+                    }
+                }
+                catch (Exception ex) { Console.WriteLine(ex); }
+            }
+            else
+            {
+                Console.WriteLine("Der Überschreibvorgang wurde abgebrochen.");
+            }
         }
     }
 }
